@@ -24,8 +24,6 @@
         <div class="container">
             <?php the_content(); ?>
         </div>
-
-
         <div class="">
           <?php
             if (have_posts()) :
@@ -46,23 +44,17 @@
                 _e('No post found');
               endif;
             ?>
-
-          
         </div>
-
     </section>
 
     <footer id="footer_area">
+      <section id="copyright_area">
+        <div class="container">
+            <p><?php echo get_theme_mod('copyright_section'); ?></p>
+        </div>
+      </section>
+    </footer>
+    <?php wp_footer(); ?>
 
-<section id="copyright_area">
-  <div class="container">
-        <p><?php echo get_theme_mod('copyright_section'); ?></p>
-  </div>
-</section>
-</footer>
-
-
-
-<?php wp_footer(); ?>
 </body>
 </html>
